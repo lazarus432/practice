@@ -66,11 +66,7 @@ var numbers = [
 
 for(row=0; row < numbers.length; row++){
     for(col=0; col < numbers[row].length; col++){
-        var even = numbers[row][col];
-        if(even % 2 === 0){
-            console.log('even');
-        }else{
-            console.log('odd');
-        }
+        numbers[row][col] = numbers[row][col] % 2 === 0 ? "even" : "odd";
+        console.log(numbers[row][col]);
     }
 }
